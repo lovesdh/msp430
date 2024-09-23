@@ -1,55 +1,36 @@
-#include <msp430.h> 
+#include <math.h>
 
-
-/**
- * main.c
- */
-
-void delay_nms(unsigned int n)
-  {
-    unsigned int j;
-    for (j=0;j<n;j++)
-    {
-      //delay_1ms();
-      _delay_cycles(400);
-    }
-  }
-
-// *************************************************************
-// ä¸»ç¨‹åº
-// *************************************************************
 void main(void)
 {
-  unsigned const PWMPeriod = 1500; //è®¾ç½®PWMPeriodå‚æ•°
-  volatile unsigned int i;        //å˜é‡
-  WDTCTL = WDTPW + WDTHOLD;   // å…³é—­çœ‹é—¨ç‹—
-  BCSCTL1= CALBC1_1MHZ;        //1Må†…éƒ¨æ—¶é’Ÿï¼Œå…¶ä»–ä¹Ÿå¯ä»¥
-  DCOCTL = CALDCO_1MHZ;
-  P1DIR |=BIT6;              // è®¾ç½® P1.6ä¸ºè¾“å‡º
-  P1SEL |=BIT6;              // è®¾ç½® P1.6ä¸ºTA0.1è¾“å‡º
-  TACCR0 = PWMPeriod;           // è®¾ç½®PWM å‘¨æœŸ
-  TACCTL1 = OUTMOD_7;           // è®¾ç½®PWM è¾“å‡ºæ¨¡å¼ä¸ºï¼š7 - PWMå¤ä½/ç½®ä½æ¨¡å¼ï¼Œ
-                              // å³è¾“å‡ºç”µå¹³åœ¨TARçš„å€¼ç­‰äºCCR1æ—¶å¤ä½ä¸º0ï¼Œå½“TARçš„å€¼ç­‰äºCCR0æ—¶ç½®ä½ä¸º1ï¼Œæ”¹å˜CCR1ï¼Œä»è€Œäº§ç”ŸPWMã€‚å…¶å®æ¨¡å¼2ä¹Ÿå¯ä»¥
-   TACTL =  TASSEL_2 +MC_1;    // è®¾ç½®TIMERAçš„æ—¶é’Ÿæºä¸ºSMCLK, è®¡æ•°æ¨¡å¼ä¸ºup,åˆ°CCR0å†è‡ªåŠ¨ä»0å¼€å§‹è®¡æ•°
-  while(1)
-  {
-   CCR1=0;//ç¡®ä¿å¼€å§‹æ˜¯æš—çš„
-    //æ¸äº®è¿‡ç¨‹ï¼šä¸æ–­è®¾ç½®CCR1çš„å€¼ï¼Œä½¿ç¿»è½¬çš„æ—¶é—´å˜é•¿ï¼Œæ”¹å˜PWMçš„å ç©ºæ¯”
+    unsigned const PWMPeriod = 1500; // ÉèÖÃPWMPeriod²ÎÊı
+    volatile unsigned int i;        // ±äÁ¿
+    WDTCTL = WDTPW + WDTHOLD;   // ¹Ø±Õ¿´ÃÅ¹·
+    BCSCTL1 = CALBC1_1MHZ;      // 1MÄÚ²¿Ê±ÖÓ£¬ÆäËûÒ²¿ÉÒÔ
+    DCOCTL = CALDCO_1MHZ;
+    P1DIR |= BIT6;              // ÉèÖÃ P1.6ÎªÊä³ö
+    P1SEL |= BIT6;              // ÉèÖÃ P1.6ÎªTA0.1Êä³ö
+    TACCR0 = PWMPeriod;         // ÉèÖÃPWM ÖÜÆÚ
+    TACCTL1 = OUTMOD_7;         // ÉèÖÃPWM Êä³öÄ£Ê½Îª£º7 - PWM¸´Î»/ÖÃÎ»Ä£Ê½
+    TACTL = TASSEL_2 + MC_1;    // ÉèÖÃTIMERAµÄÊ±ÖÓÔ´ÎªSMCLK, ¼ÆÊıÄ£Ê½Îªup,µ½CCR0ÔÙ×Ô¶¯´Ó0¿ªÊ¼¼ÆÊı
 
-    for(i=0;i<PWMPeriod;i++)     {
-      CCR1=i;
-      delay_nms(4-(i/500));  //å ç©ºæ¯”å˜åŒ–çš„å»¶æ—¶ï¼Œè°ƒæ•´å»¶è¿Ÿæ—¶é—´å¯æ”¹å˜å‘¼å¸ç¯å˜æš—çš„é€Ÿåº¦
-                          //åœ¨æš—çš„æ—¶å€™å»¶é•¿delayæ—¶é—´ï¼Œå¯å¢å¼ºæ•ˆæœ
-     }
-    //æ¸æš—è¿‡ç¨‹ï¼šä¸æ–­è®¾ç½®CCR1çš„å€¼ï¼Œä½¿ç¿»è½¬çš„æ—¶é—´å˜çŸ­ï¼Œæ”¹å˜PWMçš„å ç©ºæ¯”
-    for(i=PWMPeriod;i>0;i-=1)
+    while (1)
     {
-      CCR1=i;
-      delay_nms(4-(i/500));           //å ç©ºæ¯”å˜åŒ–çš„å»¶æ—¶ï¼Œè°ƒæ•´å»¶è¿Ÿæ—¶é—´å¯æ”¹å˜å‘¼å¸ç¯å˜æš—çš„é€Ÿåº¦
-                                    //åœ¨æš—çš„æ—¶å€™å»¶é•¿delayæ—¶é—´ï¼Œå¯å¢å¼ºæ•ˆæœ
-    }
-     CCR1=0;  //ç¡®ä¿ç¯æš—
-//     delay_nms(600); //æš—0.6Så¢å¼ºæ•ˆæœ
-  }
-}
+        CCR1 = 0; // È·±£¿ªÊ¼ÊÇ°µµÄ
 
+        // ½¥ÁÁ¹ı³Ì£ºÊ¹ÓÃÖ¸Êıº¯Êıµ÷ÕûCCR1µÄÖµ
+        for (i = 0; i < PWMPeriod; i++)
+        {
+            CCR1 = PWMPeriod * (1 - exp(-i / (PWMPeriod / 5.0)));
+            delay_nms(1); // ¹Ì¶¨ÑÓ³ÙÊ±¼ä
+        }
+
+        // ½¥°µ¹ı³Ì£ºÊ¹ÓÃÖ¸Êıº¯Êıµ÷ÕûCCR1µÄÖµ
+        for (i = PWMPeriod; i > 0; i--)
+        {
+            CCR1 = PWMPeriod * exp(-i / (PWMPeriod / 5.0));
+            delay_nms(1); // ¹Ì¶¨ÑÓ³ÙÊ±¼ä
+        }
+
+        CCR1 = 0; // È·±£µÆ°µ
+    }
+}
