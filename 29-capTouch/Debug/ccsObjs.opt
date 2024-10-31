@@ -1,0 +1,6 @@
+"./Application/main.obj"
+"./Application/structure.obj"
+"./Library/CTS_HAL.obj"
+"./Library/CTS_Layer.obj"
+"../lnk_msp430g2553.cmd"
+-llibc.a

@@ -1,0 +1,27 @@
+
+**** Build of configuration Debug for project 30-melodyBuzzer ****
+
+"D:\\learnData\\ccs\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --abi=eabi --use_hw_mpy=none --include_path="D:/learnData/ccs/ccs/ccs_base/msp430/include" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all -g --define=__MSP430G2553__ --display_error_number --diag_warning=225 --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 18: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 23: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 43: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 44: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 43: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+Finished building: "../main.c"
+ 
+Building target: "30-melodyBuzzer.out"
+Invoking: MSP430 Linker
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --abi=eabi --use_hw_mpy=none --advice:power=all -g --define=__MSP430G2553__ --display_error_number --diag_warning=225 --diag_wrap=off --printf_support=minimal -z -m"30-melodyBuzzer.map" --stack_size=80 --heap_size=80 -i"D:/learnData/ccs/ccs/ccs_base/msp430/include" -i"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="30-melodyBuzzer_linkInfo.xml" --use_hw_mpy=none --rom_model -o "30-melodyBuzzer.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "30-melodyBuzzer.out"
+ 
+
+**** Build Finished ****

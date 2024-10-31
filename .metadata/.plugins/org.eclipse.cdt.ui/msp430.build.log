@@ -1,0 +1,358 @@
+
+**** Build of configuration Debug for project msp430 ****
+
+"D:\\learnData\\ccs\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../msp430-examples-master/msp430-examples-master/00-blink/blink.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/00-blink/blink.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/00-blink"  "../msp430-examples-master/msp430-examples-master/00-blink/blink.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/00-blink/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/00-blink/blink.obj' failed
+"../msp430-examples-master/msp430-examples-master/00-blink/blink.c", line 21: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/00-blink/blink.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/00-blink/blink.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/02-alternateBlink/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/02-alternateBlink/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/02-alternateBlink"  "../msp430-examples-master/msp430-examples-master/02-alternateBlink/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/02-alternateBlink/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/02-alternateBlink/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/02-alternateBlink/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/02-alternateBlink/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/02-alternateBlink/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/01-testProject/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/01-testProject/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/01-testProject"  "../msp430-examples-master/msp430-examples-master/01-testProject/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/01-testProject/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/01-testProject/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/01-testProject/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/01-testProject/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/01-testProject/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/03-testSwitch/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/03-testSwitch/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/03-testSwitch"  "../msp430-examples-master/msp430-examples-master/03-testSwitch/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/03-testSwitch/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/03-testSwitch/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/03-testSwitch/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/03-testSwitch/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/03-testSwitch/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/04-switchToggle/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/04-switchToggle/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/04-switchToggle"  "../msp430-examples-master/msp430-examples-master/04-switchToggle/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/04-switchToggle/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/04-switchToggle/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/04-switchToggle/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/04-switchToggle/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/04-switchToggle/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/05-switchAlternate/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/05-switchAlternate/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/05-switchAlternate"  "../msp430-examples-master/msp430-examples-master/05-switchAlternate/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/05-switchAlternate/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/05-switchAlternate/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/05-switchAlternate/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/05-switchAlternate/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/05-switchAlternate/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/06-switchInterrupt"  "../msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/06-switchInterrupt/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/06-switchInterrupt/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/07-blinkWatchdog"  "../msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/07-blinkWatchdog/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/07-blinkWatchdog/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/08-charlieplexing/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/08-charlieplexing/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/08-charlieplexing"  "../msp430-examples-master/msp430-examples-master/08-charlieplexing/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/08-charlieplexing/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/08-charlieplexing/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/08-charlieplexing/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/08-charlieplexing/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/08-charlieplexing/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/09-charlieSwitch"  "../msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/09-charlieSwitch/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/09-charlieSwitch/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/10-timerBlink/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/10-timerBlink/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/10-timerBlink"  "../msp430-examples-master/msp430-examples-master/10-timerBlink/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/10-timerBlink/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/10-timerBlink/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/10-timerBlink/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/10-timerBlink/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/10-timerBlink/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/11-sevenSegment/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/11-sevenSegment/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/11-sevenSegment"  "../msp430-examples-master/msp430-examples-master/11-sevenSegment/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/11-sevenSegment/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/11-sevenSegment/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/11-sevenSegment/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/11-sevenSegment/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/11-sevenSegment/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/12-sevenSegCounter"  "../msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/12-sevenSegCounter/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/12-sevenSegCounter/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/13-pwmTest/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/13-pwmTest/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/13-pwmTest"  "../msp430-examples-master/msp430-examples-master/13-pwmTest/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/13-pwmTest/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/13-pwmTest/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/13-pwmTest/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/13-pwmTest/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/13-pwmTest/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/14-softwarePWM/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/14-softwarePWM/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/14-softwarePWM"  "../msp430-examples-master/msp430-examples-master/14-softwarePWM/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/14-softwarePWM/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/14-softwarePWM/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/14-softwarePWM/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/14-softwarePWM/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/14-softwarePWM/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/15-timerCapture/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/15-timerCapture/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/15-timerCapture"  "../msp430-examples-master/msp430-examples-master/15-timerCapture/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/15-timerCapture/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/15-timerCapture/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/15-timerCapture/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/15-timerCapture/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/15-timerCapture/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/16-adcTest/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/16-adcTest/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/16-adcTest"  "../msp430-examples-master/msp430-examples-master/16-adcTest/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/16-adcTest/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/16-adcTest/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/16-adcTest/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/16-adcTest/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/16-adcTest/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/17-dcoTest/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/17-dcoTest/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/17-dcoTest"  "../msp430-examples-master/msp430-examples-master/17-dcoTest/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/17-dcoTest/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/17-dcoTest/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/17-dcoTest/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/17-dcoTest/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/17-dcoTest/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/18-adcPWM/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/18-adcPWM/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/18-adcPWM"  "../msp430-examples-master/msp430-examples-master/18-adcPWM/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/18-adcPWM/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/18-adcPWM/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/18-adcPWM/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/18-adcPWM/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/18-adcPWM/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/19-adcPWM-lpm"  "../msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/19-adcPWM-lpm/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/20-uartEcho/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/20-uartEcho/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/20-uartEcho"  "../msp430-examples-master/msp430-examples-master/20-uartEcho/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/20-uartEcho/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/20-uartEcho/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/20-uartEcho/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/20-uartEcho/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/20-uartEcho/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/21-helloWorld/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/21-helloWorld/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/21-helloWorld"  "../msp430-examples-master/msp430-examples-master/21-helloWorld/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/21-helloWorld/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/21-helloWorld/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/21-helloWorld/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/21-helloWorld/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/21-helloWorld/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/22-uartPrintNum"  "../msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/22-uartPrintNum/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/22-uartPrintNum/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/23-uartADC/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/23-uartADC/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/23-uartADC"  "../msp430-examples-master/msp430-examples-master/23-uartADC/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/23-uartADC/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/23-uartADC/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/23-uartADC/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/23-uartADC/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/23-uartADC/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/24-spiShift/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/24-spiShift/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/24-spiShift"  "../msp430-examples-master/msp430-examples-master/24-spiShift/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/24-spiShift/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/24-spiShift/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/24-spiShift/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/24-spiShift/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/24-spiShift/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/25-i2cTempSensor"  "../msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/25-i2cTempSensor/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/25-i2cTempSensor/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/26-bitBangShift/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/26-bitBangShift/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/26-bitBangShift"  "../msp430-examples-master/msp430-examples-master/26-bitBangShift/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/26-bitBangShift/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/26-bitBangShift/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/26-bitBangShift/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/26-bitBangShift/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/26-bitBangShift/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/27-helloLCD"  "../msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/27-helloLCD/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.obj' failed
+"../msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/27-helloLCD/lcd.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/27-helloLCD/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/27-helloLCD/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/27-helloLCD"  "../msp430-examples-master/msp430-examples-master/27-helloLCD/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/27-helloLCD/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/27-helloLCD/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/27-helloLCD/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/27-helloLCD/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/27-helloLCD/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/28-simpleLCD/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/28-simpleLCD/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/28-simpleLCD"  "../msp430-examples-master/msp430-examples-master/28-simpleLCD/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/28-simpleLCD/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/28-simpleLCD/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/28-simpleLCD/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/28-simpleLCD/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/28-simpleLCD/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/29-capTouch/Application"  "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/29-capTouch/Application/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.c", line 1: fatal error #1965: cannot open source file "CTS_Layer.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/29-capTouch/Application/main.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/29-capTouch/Application"  "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/29-capTouch/Application/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.obj' failed
+"..\msp430-examples-master\msp430-examples-master\29-capTouch\Application\structure.h", line 49: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/29-capTouch/Application/structure.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/29-capTouch/Library"  "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/29-capTouch/Library/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.obj' failed
+"..\msp430-examples-master\msp430-examples-master\29-capTouch\Library\CTS_HAL.h", line 90: fatal error #1965: cannot open source file "structure.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_HAL.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/29-capTouch/Library"  "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/29-capTouch/Library/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.obj' failed
+"..\msp430-examples-master\msp430-examples-master\29-capTouch\Library\CTS_HAL.h", line 90: fatal error #1965: cannot open source file "structure.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/29-capTouch/Library/CTS_Layer.obj] Error 1
+Building file: "../msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.c"
+Invoking: Arm Compiler
+"D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/30628/workspace_v12/msp430" --include_path="D:/learnData/ccs/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.d_raw" --obj_directory="msp430-examples-master/msp430-examples-master/30-melodyBuzzer"  "../msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.c"
+ 
+>> Compilation failure
+msp430-examples-master/msp430-examples-master/30-melodyBuzzer/subdir_rules.mk:9: recipe for target 'msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.obj' failed
+"../msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.c", line 1: fatal error #1965: cannot open source file "msp430.h"
+1 catastrophic error detected in the compilation of "../msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.c".
+Compilation terminated.
+gmake: *** [msp430-examples-master/msp430-examples-master/30-melodyBuzzer/main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

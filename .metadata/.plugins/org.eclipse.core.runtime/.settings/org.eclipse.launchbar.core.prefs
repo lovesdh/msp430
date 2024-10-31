@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:21-helloWorld,org.eclipse.launchbar.core.descriptorType.default\:test,org.eclipse.launchbar.core.descriptorType.default\:MSP430G2553.ccxml,org.eclipse.launchbar.core.descriptorType.default\:blinkTest
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:21-helloWorld/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:21-helloWorld/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:MSP430G2553.ccxml/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:MSP430G2553.ccxml/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:blinkTest/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchMode=run
