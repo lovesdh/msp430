@@ -1,6 +1,10 @@
 #include <msp430.h> 
 #include "stdint.h"
 
+uint16_t adcvolt[101] = {0};
+uint16_t maxn = 0;
+uint16_t minn = 0;
+uint16_t vpp = 0;
 /*
  * @fn:    void InitSystemClock(void)
  * @brief: 初始化系统时钟
@@ -56,6 +60,11 @@ void InitUART(void)
     IFG2 &= ~UCA0RXIFG;
 }
 
+void UARTSendByte(uint8_t byte) {
+    while (UCA0STAT & UCBUSY);
+    UCA0TXBUF = byte;
+}
+
 /*
  * @fn:    void UARTSendString(uint8_t *pbuff, uint_8 num)
  * @brief: 初始化串口发送字符串
@@ -64,14 +73,10 @@ void InitUART(void)
  * @return:none
  * @comment: 初始化串口发送字符串
  */
-void UARTSendString(uint8_t *pbuff, uint8_t num)
+void UARTSendString(uint8_t *pbuff)
 {
-    uint8_t cnt = 0;
-    for(cnt = 0; cnt < num; cnt++)
-    {
-        /*判断是否有数据正在发送*/
-        while(UCA0STAT & UCBUSY);
-        UCA0TXBUF = *(pbuff + cnt);
+    while (*pbuff) {
+       UARTSendByte(*pbuff++);
     }
 }
 
@@ -82,17 +87,37 @@ void UARTSendString(uint8_t *pbuff, uint8_t num)
  * @return:none
  * @comment: 初始化串口发送数字
  */
-void PrintNumber(uint16_t num)
-{
-    uint8_t cnt = 0;
-    uint8_t buff[6] = {0,0,0,0,0,'\n'};
+void PrintNumber(int num) {
+    char buffer[12];
+    int i = 0;
 
-    for(cnt = 0; cnt < 5; cnt++)
-    {
-        buff[4 - cnt] = (uint8_t)(num % 10 + '0');
-        num /= 10;
+    if (num < 0) {
+        buffer[i++] = '-';
+        num = -num;
     }
-    UARTSendString(buff,6);
+
+    int len = 0;
+    while (num > 0) {
+        buffer[i++] = (num % 10) + '0';
+        num /= 10;
+        len++;
+    }
+    if (len == 0) {
+        buffer[i++] = '0';
+    }
+
+    int start = 0;
+    int end = i - 1;
+    while (start < end) {
+        char temp = buffer[start];
+        buffer[start] = buffer[end];
+        buffer[end] = temp;
+        start++;
+        end--;
+    }
+    buffer[i] = '\0';
+
+    UARTSendString((uint8_t *)buffer);
 }
 
 /*
@@ -102,15 +127,43 @@ void PrintNumber(uint16_t num)
  * @return:none
  * @comment: 初始化串口发送浮点型数字
  */
-void PrintFloat(float num)
-{
-    uint8_t buff[] = {0,'.',0,0,0,'\n'};
-    uint16_t temp = (uint16_t)(num * 1000);
-    buff[0] = (uint8_t)(temp / 1000) + '0';
-    buff[2] = (uint8_t)((temp % 1000) / 100) + '0';
-    buff[3] = (uint8_t)((temp / 100) / 10) + '0';
-    buff[4] = (uint8_t)(temp % 10) + '0';
-    UARTSendString(buff,6);
+void PrintFloat(float num, int decimalPlaces) {
+    char str[12];
+    int intPart = (int)num;
+    float decPart = num - (float)intPart;
+    int decMultiplier = 10;
+    int i;
+
+    int len = 0;
+    if (intPart < 0) {
+        str[len++] = '-';
+        intPart = -intPart;
+    }
+    char intStr[12];
+    int intLen = 0;
+    while (intPart > 0) {
+        intStr[intLen++] = (intPart % 10) + '0';
+        intPart /= 10;
+    }
+    if (intLen == 0) {
+        intStr[intLen++] = '0';
+    }
+    for (i = intLen - 1; i >= 0; i--) {
+        str[len++] = intStr[i];
+    }
+
+    if (decimalPlaces > 0) {
+        str[len++] = '.';
+        while (decimalPlaces-- > 0 && decPart > 0) {
+            decPart *= decMultiplier;
+            int digit = (int)decPart;
+            str[len++] = digit + '0';
+            decPart -= digit;
+        }
+    }
+
+    str[len] = '\0';
+    UARTSendString(str);
 }
 
 /*
@@ -144,6 +197,13 @@ void InitADC(void)
     ADC10CTL0 |= ADC10ON;
 }
 
+void StartADCConvert(void) {
+    // 启动ADC转换
+    ADC10CTL0 |= ADC10SC | ENC;
+    // 等待转换完成
+    while (ADC10CTL1 & ADC10BUSY);
+}
+
 /*
  * @fn:    uint16_t GetADCValue(void)
  * @brief: 进行一次ADC转换并返回ADC转换结果
@@ -161,25 +221,82 @@ uint16_t GetADCValue(void)
     return ADC10MEM;
 }
 
+uint16_t Max(uint16_t *numptr,uint16_t num)
+{
+    uint16_t cnt = 0;
+    uint16_t max = 0;
+    for(cnt = 0;cnt < num;cnt ++)
+    {
+        if(numptr[cnt] > max){
+            max = numptr[cnt];
+        }
+    }
+    return max;
+}
+
+uint16_t Min(uint16_t *numptr,uint16_t num)
+{
+    uint16_t cnt = 0;
+    uint16_t min = 0;
+    min = numptr[0];
+    for(cnt = 0;cnt < num;cnt ++)
+    {
+        if(numptr[cnt] < min){
+            min = numptr[cnt];
+        }
+    }
+    return min;
+}
+
+uint16_t Average(uint16_t *datptr,uint16_t num)
+{
+    uint32_t sum = 0;
+    uint8_t cnt = 0;
+    for(cnt = 0;cnt < num;cnt ++)
+    {
+        sum += *(datptr + cnt);
+    }
+    return (uint16_t)(sum /num);
+}
+
 int main(void)
 {
-    float voltage = 0.0;
-    uint16_t adcvalue = 0;
-	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
-	InitSystemClock();
-	InitUART();
-	InitADC();
-	
-	while(1)
-	{
-	    adcvalue = GetADCValue();
-	    voltage = adcvalue * 2.5 / 1023;
+    uint8_t cnt = 0;
+    WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
+    InitSystemClock();
+    InitUART();
+    InitADC();
 
-	    UARTSendString("ADC10转接结果为：",17);
-	    PrintNumber(adcvalue);
-	    UARTSendString("相应电压值为：",14);
-	    PrintFloat(voltage);
+    while(1)
+    {
+        for (cnt = 0; cnt < 100; cnt++) {
+           StartADCConvert();
+        }
+
+        maxn=Max(adcvolt,100);
+        minn=Min(adcvolt,100);
+        vpp=maxn-minn;
+        UARTSendString("Max: ");
+        PrintNumber(maxn);
+        UARTSendString("\n");
+
+        // 通过UART发送最小值
+        UARTSendString("Min: ");
+        PrintNumber(minn);
+        UARTSendString("\n");
+
+        //通过UART发送峰值
+        UARTSendString("VPP: ");
+        PrintNumber(vpp);
+        UARTSendString("\n");
+
+        // 通过UART发送平均值
+        UARTSendString("Average: ");
+        PrintFloat((float)Average(adcvolt, 100)*2.5/1023, 3);
+        UARTSendString("\n");
+
+        UARTSendString("Finished!");
         __delay_cycles(300000);
-	}
-	return 0;
+    }
+    return 0;
 }
